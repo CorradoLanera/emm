@@ -4,3 +4,4 @@ language:
   ui:
     chapter_name: "Section "
 download: ["pdf", "epub"]
+output_dir: "docs"
