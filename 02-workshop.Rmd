@@ -1,0 +1,162 @@
+# EMM workshop
+
+> Overview: This course provides a general overview of EMM technology and related tools. It shows with
+practical examples how Text Mining and Analysis (TMA) can effectively support the daily work of
+analysts. The platform processes every day about 300,000 news articles providing: language
+detection, categorization, language recognition, entity extraction, quote extraction, geotagging,
+tonality, duplicate detection, categorisation, indexing and searching, clustering, statistics and event
+extraction. Dedicated Graphical User Interfaces allow analysts to display and browse all metadata
+and create reports and/or newsletters.
+The course structure includes hands-on sessions based on a common use case: participant will
+learn how to configure the platform in order to capture news related to their topics of interest,
+browse the results, produce newsletters and send notifications.
+This course is targeting people who has just started using EMM or who need to assess whether to
+adopt it as media monitoring platform.
+
+*Big data Pilot Project*, _Text and Data Mining unit_
+- EMM: Europe Media Monitor
+- SITAF: Statistical and Information for Anti Fraud
+TIM: Tools for Innovation Monitoring
+
+
+> for every people: do not store anything and do not need to be an expert
+
+<https://newsdesk.emm4u.eu> [osint2017]
+
+## Aim: what EMM can and cannot do.
+
+- have the platform on our server (they don't have no more resources to supply external request)
+
+1. Analyze unstructured text:
+  - Natural language
+  - Ambiguous/incomplete 
+  - Multi-language coverage
+2. ~70 languages
+3. DO NOT SCAN ANYTHING, it is not Google: it scan 70 source every 5 minutes. Every source is as any of one which decide to collaborate to the project. If our interested source is not in EMM they cannot add it! They need a (open source) contract.
+4. They provide statistics or insides on the text but if we want the real text we have to click on the link! (There are the email to WHO too)
+
+
+## What they do with the text:
+
+1. First thing is to asses the language! (detected with proprietary tools! 80% accuracy overall)
+2. Second, category: e.g. "Taxation, Economy, EU-US trade" --- 3k categories/topics, based on more 60k keywords. The quality of the results comes from the quality of the translation of the keywords (do not use Google translate!). 
+
+> we will do an exercise on this categorization process
+
+- once you have set the keywords of the topic EMM redo every day 24/7 the categorization of sources on your topic!
+
+4. next, there are extracted the entities: people and organization. (for each entities they search for every variant of the name). 1.7M entities.
+
+5. It extract also the quotes! from the entities. (note: the name of the street do not become entities [...he said...mmm])
+
+6. Geo detection from the text, and add meta data with the lat and lon
+
+7. sentiment analysis: positive or negative (based on positive and negatives keywords). Usually they do not show this results because taken by itself do not have a great meaning. on the other hand if we collect all the article of a resource over a year and we consider the average level of sentiment for that resource in that topic, then you can have a value that represent the trend of the sentiment of a specific paper into the subject in his context.it is also difficult to separate the sentiment of the people who wrote with the sentiment of the news or the topic (e.g. a very good people that work in a very bad immigrant situation)
+
+
+
+
+> Extract event metadata, only available for specific topic. Anyway it only aims to reduce the ammount of work it is not magic.
+
+
+
+first: on the website we have to detect the correct part of text of interest. 80% of quality (1/5 of text retrieved are fake/wrong/out-of-topic text)
+
+
+8k news sites
+300k article/day
+70 languages
+3k categories
+60k keywords
+runs 24/7
+25k/day visitors
+
+Domains: Border security, Cyber-crime and [?]
+
+
+## Notes
+
+the system is _live_ so the new overwrite the older... if you are not on the screen you loose them
+
+subscribe for topics: e.mail, rss, sms, ...: subscribe for a one every 24 hours or even (do not did this) for a prompt alert for something
+
+translation of 20 languages in English. Why: because someone do not want do tell to Google our keywords.
+there are only two security: to not disclose the translation, the click, the search... and the copyright.
+
+If you want to have the translation service provide by the EMM the have to give you the servers (real..they are 4)
+
+everything look at the interface is no-moderated!!!
+
+Is it also possible to filter the article retrieved by _the same stories_ but stories are language specific!
+
+
+Multilingual aspect are very important. Even English do not cover all the region of the word
+
+you can look at the stories AFTER the selection on the topic in a specific context
+
+
+they can do past stories for the past but they do not have a graphical interface for this. If we have a specific request (title of the article, dates, etc...) they can retrieve the information about its story.
+
+
+<http://medisys.newsbrief.eu/medisys/homeedition/it/home.html>
+
+
+
+
+## second service (not yet publicy) for expert...
+
+...in which you can define your research and store them
+
+
+
+Use of twitter to extend the information not to create or compose them: usually people read the news and next talk about the new. (newspaper first!)
+
+For twitter there are two level categorization, the first from a search next a second screen based on a user search strings:
+top-ten user, hashtags keywords and links (note: links are very important because the content of the link are often out of the repository of the EMM resources and so this list of links can inform on something before it appear in the EMM)
+
+
+
+
+## Main process-flow
+- Short document!!(1 page)
+
+documenti entrano nel processo (dal web, dalle mail, ...) e iniziano il processo:
+ 1. identificazione della lingua
+ 2. topic
+ 3. geo location
+ 4. entities
+ 5. quotations
+ ....
+ ...
+ 
+ alla fine esce il blocco coi metadata e il testo e qui il testo viene immediatamente cancellato! tutto il resto viene mantenuto per sempre, inclusi il link, e tutti i metadata. e quindi possono essere interrogati dal sistema come una sorta di google
+ 
+ 
+ 
+### Exercice: create a category
+
+
+one file on topics based on keywords and one file on metadata
+
+
+
+## Produce newsletter
+
+Di fatto un account consiste in due file Alert e Filter. Il primo serve a elencare e memorizzare le _categorie_ il secondo serve per fare combinazioni opportune di categorie. Per esempio si possono combinare categorie diverse, considerare solo determinate lingue, determinate nazioni di origine, determinate risorse (source di informazioni da cui pescano)
+
+
+Main desks: <https://newsdesk.emm4u.eu/ND1/>
+CategoryEditor: <https://newsdesk.emm4u.eu/CategoryEditor/AlertEditor.html#>
+WorkSpace: <https://newsdesk.emm4u.eu/ND1/?ws=true>
+EMMnewws: <http://emm.newsbrief.eu/NewsBrief/sourceslist/it/list.html>
+Wiki; <https://wiki.emm4u.eu/confluence/display/CE/Category+Definitions>
+MediSys: <http://medisys.newsbrief.eu/medisys/alertedition/en/Chagasdisease.html>
+
+
+Per vedere le proprie categorie andare in una a caso dal EMMnews (ma entrarci, fare attenzione che nell'indirizzo compaia "alertedition") e sostituire la parte finale dell'indirizzo con il nome della propria categoria. A questo punto ci si puo sottoscrivere alla categoria e quindi si possono avere aggiornamenti giornalieri. (o istantanei, me sconsigliatissimo!!), per esempio il nostro
+
+## Contacts
+charles [dot] macmillan [at] ec [dot] europa [dot] eu
+jens [dot] linge [at] ec [dot] europa [dot] eu
+marco [dot] verile [at] ec [dot] europa [dot] eu
+eleonora [dot] mantica [at] ext [dot] ec [dot] europa [dot] eu

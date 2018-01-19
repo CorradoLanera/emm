@@ -1,0 +1,6 @@
+book_filename: "EMM-JRC_notes"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Section "
+download: ["pdf", "epub"]

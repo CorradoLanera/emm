@@ -1,0 +1,199 @@
+# Conference {#conf}
+
+## International co-operation in Financial Criminal Investigations^[_Eugenie de Lange_ --- Dutch Tax Authorities]
+
+> Abstract:
+Technological developments make things possible that we could not have imagined twenty-five
+years ago. Forms of communication, producing things, transporting goods, the way in which
+transactions take place are changing constantly, not only in legal, but also in illegal businesses. To
+effectively fight serious financial cross border criminality, international cooperation is a necessity.
+The past year two international initiatives were launched which had financial criminal investigations
+as the starting point. ENFIN, a European knowledge Network were members and partners can
+exchange experiences, methods and new developments on Financial Investigations, and FCInet a
+virtual solution that makes data matching and exchange easy and enlarge the international cooperation
+possibilities. FCInet is based on the proven technology and is supported by the Forum of
+Tax Crime Investigations (FHTCI) of the OECD.
+Both networks consist of Law Enforcement organisations specialised in financial investigations and
+Tax and Customs administrations. They collaborate with respect to the differences in working
+methods, (privacy) legislation, data protection and independence of the participating organisations.
+The presentation will contain backgrounds on the ENFIN and FCInet, the aims, partners, steps taken
+and the outlook for 2018.
+
+
+
+
+
+
+## SIRIUS as a law frameworkfor internet investigations^[_Juan De Toledo Maetinez_ --- EUROPOL]
+
+> Abstract:
+Nowadays, investigators working on a case cannot avoid investigating the digital footprint of those
+who plan terrorist attacks or are suspected of recruitment, training and financing of terrorism, as
+well as incitement to commit a terrorist offense, including relationships, communication means,
+financial aspects, logistics, centres of interest and behavioural activity.
+Whilst these information sets were historically under the remit of national entities, they have now
+acquired a global perspective and are owned by Online Service Providers, oftentimes based outside
+of the EU territory. Further complexity stems both from the volatility of data held across different
+legislations, as well as its volume and the urgency with which this information is needed in the
+context of a CT case In the attempt to cope with these challenges and to maximize the level and the
+quality of operational support provided, we have recently launched SIRIUS, a project which aims to
+cater for the investigators’ needs in an online environment. Available only to law enforcement
+authorities and deployed in a closed and secured environment, SIRIUS is the place where all the
+information related to Online Service Providers, and how to increase the investigation efficiency can
+be found, with manuals, tips, forums, Q&A, etc. Additionally, the platform will also include a
+repository for the collaborative development of tools to support investigations of crimes facilitated
+by the Internet, developed by and intended for the Law Enforcement community.
+
+- <https://www.europol.europa.eu/newsroom/news/europol-launches-sirius-platform-to-facilitate-online-investigations>
+
+1. 26 attacks since January 2016
+
+2. Communications:
+  - many to many --- propaganda
+  - one to many  --- recruitment
+  - one to one   --- private communications
+
+3. Steps:
+  - standardization of data collections
+  - identification of nodes about the _big plyers_ do the (net)
+  - high profiles investigation
+
+4. Big Data:
+  - Open
+  - Closed/Private
+  
+> Europol Experts --> SIRIUS project: 263 members, 13 ONSIT tools
+
+
+
+
+
+
+
+
+
+
+
+## Social Media Monitoring for Awareness of Security threats against VIPs: opportunities and challenges^[_Bertrand De Longueville_ ---  DG HR, European Commission]
+
+> Abstract:
+Identifying possible adversaries is a key element of Security Threat Assessments. When assessing
+threats against persons with high public visibility, monitoring Social Media may seem a promising
+idea in order to identify potential groups, persons, ideologies developing a specific hate narrative.
+Indeed, social media features all sort of opinion trends and are often used as an echo chamber for
+propaganda purposes. They can thus be seen as an easily accessible and abundant source for
+Personal Threat Assessment purposes. However, exploitation of Social Media material into
+actionable intelligence (e.g. to support decisions on the set up of VIP security measures) poses
+several methodological and technical challenges. The purpose of this presentation is to stimulate
+discussion on such challenges, rather than describing pre-cooked solutions.
+
+
+VIPs:
+- 28 European commissioners
+- any staff member exposed to high visibility because of his/her functions
+- any staff member exposed to a security threat because of his/her functions
+
+80%/90% of false positives (for vocabulary search for the most violent languages used)
+
+
+
+
+
+
+
+## Computer support for analysing violent extremism in online environments^[_Magnus Sahlgren_ magnus [dot] sahlgren [at] ri [dot] se --- FOI – Swedish Defence Research Agency]
+
+> Abstract:
+This talk gives an overview over the research done at the Swedish Defense Research Agency (FOI)
+on developing and applying tools for analysing violent extremism in online environments. The talk
+focuses on analysis of text data, and presents some of the core technologies we use to deal with
+large-scale and noisy data. We also provide examples from two recent studies where we have
+applied our tools to large collections of propaganda material from IS, and to large collections of web
+data from Swedish right-wing extremist groups.
+
+
+
+Analyses: 
+- theory driven (warnings defined by experts)
+- data driven
+
+
+Main topics:
+1. Lone wolf actors (eg, fixation, leakage)
+2. Radicalization (eg, in-group/out-group, dichotomous thinking)
+
+### Linguistic marker:
+1. word list
+2. vocabulary variation (synonyms)
+3. Semantic memories
+
+### Thematic analyses:
+Theme and word list (eg, BRUTALITY: exclude, punish, behead ...)
+
+Count occurrences of word in data
+Monitor theme over time
+
+
+### Processing pipeline
+segmentation - Language - Tokenization - Normalization
+
+> normalization improve recall but can reduce precision
+
+- overestimation problem: polysemous (eg, "execute"): disambiguation
+- underestimation problem: synonymy ("IS/ISIS/ISIL/Daesh"): semantic memory
+
+
+### End-to-end system
+
+Character-based (deep) neural network
+Eliminate the need for preprocessing, more accurate then lexical analyses (if trained with sufficient data)
+
+eg, thematic analyses of IS propaganda
+
+- prior polarity list (sentiment analyses)
+
+English: opinion lexicon, MPQA, sentiwordnet, LIWC, saifmohammed.com (domain specific lexicon) 
+
+> how to detect ironia?!?!
+
+Lexicon VS MLT
+
+Annotation:
+- correlation as measure of reliability (>.8, for someone >.9)
+
+- demographic: gender, age, origin classification
+- author identification, alias matching
+- socio-political: education, ...
+
+Analysis platform (not data collection!)
+
+dark WEB (TOR): agora market (main drug market)
+
+
+
+
+
+
+
+## Use of Open-Source Information in the IAEA Safeguards Department^[_Chris Eldrige_ International Atomic Energy Agency]
+
+
+> Abstract: The IAEA Department of Safeguards makes extensive use of open-source information in
+support of its mission to verify the compliance of Member States with their safeguards obligations.
+Open-source information is one of several data streams that facilitate the ongoing State evaluation
+process. This presentation will review the department’s work with open-source information, which
+includes both routine monitoring of news and other information sources and targeted searching, to
+support verification activities both in headquarters and in the field. Sources used include websites,
+newsfeeds, scientific and technical literature, and databases containing information on imports and
+exports of commodities. The ongoing, productive relationship between the IAEA and JRC Ispra has
+significantly strengthened the Department of Safeguards’ capabilities in routine monitoring of open
+sources, and the IAEA is now exploring the possibility of using the EMM OSINT Suite to streamline
+and improve the department’s capability to perform targeted searches of open sources for
+information of safeguards relevance.
+
+- credible assurance to the international community that States are honoring their safeguards obligations
+
+ - correctness & *completeness* 
+ 
+
+- [video](https://goo.gl/6rVxqt): inspecting the nuclear fuel cycle
